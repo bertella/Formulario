@@ -41,9 +41,20 @@ if (empty($_POST["mensaje"])) {
 }
 
 // CUERPO DEL MENSAJE
-$cuerpo = 'nombre:' .$nombre.'\n';
-$cuerpo .= 'E-mail:' .$email.'\n';
-$cuerpo .= 'Mensaje:' .$mensaje.'\n';
+$cuerpo .= "nombre: ";
+$cuerpo .=  $nombre;
+$cuerpo .= "\n";
+ 
+
+$cuerpo .= "email";
+$cuerpo .=  $email;
+$cuerpo .= "\n";
+
+
+$cuerpo .= "Mensaje: ";
+$cuerpo .=  $mensaje;
+$cuerpo .= "\n";
+
 
 //DIRECCION
 $enviarA='bertella.galuc@gmail.com';
